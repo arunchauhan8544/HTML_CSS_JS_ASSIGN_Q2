@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width:100vw;
+        }
+        th,td{
+            border:1px solid black;
+            padding:6px;
+        }
+        tr:hover{
+            background-color:beige;
+        }
+        #button1,#passStudent,#failStudent{
+            background-color:lightblue;
+            margin:4px;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>   
+    
+
+    <table style="border: 2px;">
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>phone number</th>
+            <th>percentage</th>
+            <th>hobbies</th>
+            </tr>
+        </thead>
+        
+
+    <tbody id="student-list"></tbody>
+    </table>
+    <button type="button" id="button1">Add New Button</button>
+    <form id="student-form" style="display: none;">
+   
+    <label for="Name">Enter your name</label>
+    <input type="text" id="Name"></br></br>
+    <label for="gmail">Enter your email address</label>
+    <input type="email" id="gmail"></br></br>
+    <label for="ph">Enter your phonenumber</label>
+    <input type="text" id="ph"></br></br>
+    <label for="percentage">Enter your percentage</label>
+    <input type="number" id="percentage"></br></br>
+    <label for="hobbies">Enter your hobbies</label>
+    <textarea id="hobbies"></textarea></br></br>
+    <button type="submit" id="save">save</button>
+</form>
+
+<button id="passStudent">display pass students</button>
+<button id="failStudent">display fail students</button>
+
+   
+    
+    <script src="student.js"></script>
+
+    
+</body>
+</html>
